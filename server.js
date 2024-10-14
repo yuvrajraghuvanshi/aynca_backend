@@ -53,7 +53,7 @@ async function startServer() {
     });
 
     // Ensure authentication routes are exposed
-    strapi.server.app.use(strapi.server.router);
+    // strapi.server.app.use(strapi.server.router);
 
 
     // Get the port from Strapi config
