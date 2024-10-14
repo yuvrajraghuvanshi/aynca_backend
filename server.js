@@ -16,7 +16,7 @@ async function startServer() {
     // Set up WebSocket using Socket.IO
     const io = socketIO(server, {
       cors: {
-        origin: ["http://localhost:3000", "http://localhost:1337"], // Allow both frontend and backend URLs
+        origin: ["http://localhost:3000", "http://localhost:1337","https://aynafrontend.netlify.app"], // Allow both frontend and backend URLs
         methods: ["GET", "POST"],
         credentials: true
       }
