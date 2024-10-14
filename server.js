@@ -1,6 +1,7 @@
 const Strapi = require('@strapi/strapi');
 const http = require('http');
 const socketIO = require("socket.io");
+require("dotenv").config()
 
 async function startServer() {
   try {
@@ -57,7 +58,7 @@ async function startServer() {
 
 
     // Get the port from Strapi config
-    const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 1337;
 
     // Start listening
     server.listen(port, () => {
