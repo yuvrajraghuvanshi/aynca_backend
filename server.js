@@ -56,7 +56,7 @@ async function startServer() {
     // strapi.server.app.use(strapi.middlewares.auth);
 
     // Get the port from Strapi config
-    const port = strapi.config.get('server.port', 1337);
+    const port = strapi.config.get('server.port', process.env.PORT || 1337);
 
     // Start listening
     server.listen(port, () => {
