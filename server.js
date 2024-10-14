@@ -53,10 +53,11 @@ async function startServer() {
     });
 
     // Ensure authentication routes are exposed
-    // strapi.server.app.use(strapi.middlewares.auth);
+    strapi.server.app.use(strapi.server.router);
+
 
     // Get the port from Strapi config
-    const port = process.env.PORT || 1337;
+    const port = 5000;
 
     // Start listening
     server.listen(port, () => {
