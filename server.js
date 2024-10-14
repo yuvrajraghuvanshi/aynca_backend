@@ -57,7 +57,7 @@ async function startServer() {
 
 
     // Get the port from Strapi config
-    const port = 5000;
+    const port = process.env.PORT || 5000;
 
     // Start listening
     server.listen(port, () => {
